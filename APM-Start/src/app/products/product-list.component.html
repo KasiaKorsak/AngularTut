@@ -11,6 +11,17 @@
                 <input type='text'
                        [(ngModel)]='listFilter'>
             </div>
+            <div class='col-md-1'>
+                <label for="products">Sort by</label>
+            </div>
+            <div class='col-md-4'>
+                <select [(ngModel)]="listSort">
+                    <option value='productName'>Product name</option>
+                    <option value='productCode'>Code</option>
+                    <option value='price'>Price</option>
+                    <option value='rating'>Rating</option>
+                </select>
+            </div>
         </div>
         <div class='row'>
             <div class='col-md-6'>
